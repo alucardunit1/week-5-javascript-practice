@@ -9,18 +9,35 @@
 </head>
 
 <body>
-  <h1>A game of rock - paper - scissors</h1>
+  <h1>A game of Rock - Paper - Scissors</h1>
   <script>
 
-    let move1 = prompt("Player 1: rock, paper, or scissors?");
+    let move1 = prompt("Player 1: Rock, Paper, or Scissors?");
 
-    let move2 = prompt("Player 2: rock, paper, or scissors?");
+    let move2 = prompt("Player 2: Rock, Paper, or Scissors?");
 
-    if (move1 === "rock" && move2 === "scissors") {
+    if (move1 === "Rock" && move2 === "Scissors") {
       document.write("Player 1 wins");
-    } else if (move1 === "rock" && move2 === "paper") {
+    } else if (move1 === "Rock" && move2 === "Paper") {
       document.write("Player 2 wins");
+    } else if (move1 === "Rock" && move2 === "Rock") {
+      document.write("It's a tie");
+    } else if (move1 === "Paper" && move2 === "Rock") {
+      document.write("Player 1 wins");
+    } else if (move1 === "Paper" && move2 === "Scissors") {
+      document.write("Player 2 wins");
+    } else if (move1 === "Paper" && move2 === "Paper") {
+      document.write("It's a tie");
+    } else if (move1 === "Scissors" && move2 === "Paper") {
+      document.write("Player 1 wins");
+    } else if (move1 === "Scissors" && move2 === "Rock") {
+      document.write("Player 2 wins");
+    } else if (move1 === "Scissors" && move2 === "Scissors") {
+      document.write("It's a tie");
+    } else {
+      document.write("Invalid input");
     }
+    
 
   </script>
 
